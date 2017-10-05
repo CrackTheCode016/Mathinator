@@ -19,9 +19,14 @@
 		DE64BC571F8114BF004F838B /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC561F8114BF004F838B /* AboutVC.swift */; };
 		DE64BC591F811950004F838B /* peastacyfancy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE64BC581F8116A3004F838B /* peastacyfancy.ttf */; };
 		DE64BC5B1F811A5D004F838B /* CoreConceptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC5A1F811A5D004F838B /* CoreConceptVC.swift */; };
-		DE64BC631F818C3E004F838B /* TableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC621F818C3E004F838B /* TableModel.swift */; };
+		DE64BC631F818C3E004F838B /* CoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC621F818C3E004F838B /* CoreModel.swift */; };
 		DE64BC651F818E37004F838B /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC641F818E37004F838B /* TableCell.swift */; };
 		DE64BC671F819386004F838B /* CoreConceptDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC661F819386004F838B /* CoreConceptDetailVC.swift */; };
+		DE64BC691F8416BE004F838B /* AlgebraIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC681F8416BE004F838B /* AlgebraIVC.swift */; };
+		DE64BC6B1F841892004F838B /* TableTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC6A1F841892004F838B /* TableTemplate.swift */; };
+		DE64BC6D1F8422F2004F838B /* AlgebraIDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC6C1F8422F2004F838B /* AlgebraIDetailVC.swift */; };
+		DE64BC6F1F842542004F838B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC6E1F842542004F838B /* Calculator.swift */; };
+		DE64BC711F86A336004F838B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BC701F86A335004F838B /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +65,14 @@
 		DE64BC561F8114BF004F838B /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		DE64BC581F8116A3004F838B /* peastacyfancy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = peastacyfancy.ttf; sourceTree = "<group>"; };
 		DE64BC5A1F811A5D004F838B /* CoreConceptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreConceptVC.swift; sourceTree = "<group>"; };
-		DE64BC621F818C3E004F838B /* TableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModel.swift; sourceTree = "<group>"; };
+		DE64BC621F818C3E004F838B /* CoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModel.swift; sourceTree = "<group>"; };
 		DE64BC641F818E37004F838B /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		DE64BC661F819386004F838B /* CoreConceptDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreConceptDetailVC.swift; sourceTree = "<group>"; };
+		DE64BC681F8416BE004F838B /* AlgebraIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgebraIVC.swift; sourceTree = "<group>"; };
+		DE64BC6A1F841892004F838B /* TableTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTemplate.swift; sourceTree = "<group>"; };
+		DE64BC6C1F8422F2004F838B /* AlgebraIDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgebraIDetailVC.swift; sourceTree = "<group>"; };
+		DE64BC6E1F842542004F838B /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		DE64BC701F86A335004F838B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +159,8 @@
 				DE64BC661F819386004F838B /* CoreConceptDetailVC.swift */,
 				DE64BC5A1F811A5D004F838B /* CoreConceptVC.swift */,
 				DE64BC261F810E88004F838B /* MainVC.swift */,
+				DE64BC681F8416BE004F838B /* AlgebraIVC.swift */,
+				DE64BC6C1F8422F2004F838B /* AlgebraIDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,7 +180,9 @@
 		DE64BC5E1F811A6C004F838B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DE64BC621F818C3E004F838B /* TableModel.swift */,
+				DE64BC621F818C3E004F838B /* CoreModel.swift */,
+				DE64BC6A1F841892004F838B /* TableTemplate.swift */,
+				DE64BC6E1F842542004F838B /* Calculator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +199,7 @@
 		DE64BC611F811A89004F838B /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
+				DE64BC701F86A335004F838B /* Global.swift */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";
@@ -327,12 +342,17 @@
 				DE64BC5B1F811A5D004F838B /* CoreConceptVC.swift in Sources */,
 				DE64BC271F810E88004F838B /* MainVC.swift in Sources */,
 				DE64BC651F818E37004F838B /* TableCell.swift in Sources */,
+				DE64BC691F8416BE004F838B /* AlgebraIVC.swift in Sources */,
+				DE64BC6B1F841892004F838B /* TableTemplate.swift in Sources */,
 				DE64BC571F8114BF004F838B /* AboutVC.swift in Sources */,
+				DE64BC711F86A336004F838B /* Global.swift in Sources */,
 				DE64BC551F811258004F838B /* ButtonCard.swift in Sources */,
+				DE64BC6F1F842542004F838B /* Calculator.swift in Sources */,
 				DE64BC531F810E9F004F838B /* CardView.swift in Sources */,
+				DE64BC6D1F8422F2004F838B /* AlgebraIDetailVC.swift in Sources */,
 				DE64BC251F810E88004F838B /* AppDelegate.swift in Sources */,
 				DE64BC671F819386004F838B /* CoreConceptDetailVC.swift in Sources */,
-				DE64BC631F818C3E004F838B /* TableModel.swift in Sources */,
+				DE64BC631F818C3E004F838B /* CoreModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

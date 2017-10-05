@@ -10,7 +10,7 @@ import UIKit
 
 class CoreConceptDetailVC: UIViewController {
     
-    var coreItem: TableModel!
+    var coreItem: CoreModel!
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var descriptionLabel: UILabel!

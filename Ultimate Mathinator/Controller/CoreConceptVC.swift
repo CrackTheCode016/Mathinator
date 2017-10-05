@@ -4,7 +4,7 @@ import UIKit
 class CoreConceptVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    var items = [TableModel]()
+    var items = [CoreModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,7 @@ class CoreConceptVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "CoreDetailSegue" {
             if let vc = segue.destination as? CoreConceptDetailVC {
-                if let item = sender as? TableModel {
+                if let item = sender as? CoreModel {
                     vc.coreItem = item
                 }
             }
@@ -57,14 +57,14 @@ class CoreConceptVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 103
+        return 105
     }
     
     func addItems() {
-        items.append(TableModel(topicTitle: "Adding Negatives", description: "Adding a negative number to positive like so: \n -4 + 8 \n is not as hard as it looks.  Think of it like subtracting, and switch them around like so: \n 8 - 4 \n Now we can just subtract, and we get our answer! \n -4 + 8 = 4 \n Now here is the something that gets most people: how do I know what sign goes where?  Well, we simply take the bigger numbers' sign and put it in our answer! \n -16 + 8 = -8 \n Since -16 was the larger number, and we are adding 8 to -16, we get -8."))
-        items.append(TableModel(topicTitle: "Subtracting Negatives", description: "Negative Numbers."))
-        items.append(TableModel(topicTitle: "Multiplying/Dividing Negatives", description: "Negative Numbers."))
-        items.append(TableModel(topicTitle: "Times Tables", description: "Negative Numbers."))
+        items.append(CoreModel(topicTitle: "Adding Negatives", description: "Adding a negative number to positive like so: \n -4 + 8 \n is not as hard as it looks.  Think of it like subtracting, and switch them around like so: \n 8 - 4 \n Now we can just subtract, and we get our answer! \n -4 + 8 = 4 \n Now here is the something that gets most people: how do I know what sign goes where?  Well, we simply take the bigger numbers' sign and put it in our answer! \n -16 + 8 = -8 \n Since -16 was the larger number, and we are adding 8 to -16, we get -8."))
+        items.append(CoreModel(topicTitle: "Subtracting Negatives", description: ""))
+        items.append(CoreModel(topicTitle: "Multiplying/Dividing Negatives", description: ""))
+        items.append(CoreModel(topicTitle: "Times Tables", description: ""))
 
     }
 }

@@ -10,10 +10,13 @@ import UIKit
 
 class TableCell: UITableViewCell {
     @IBOutlet weak var topicTitle: UILabel!
-    
     @IBOutlet weak var descLabel: UILabel!
     
-    func updateCellUI(model: TableModel) {
+    @IBOutlet weak var algebraICalcTitle: UILabel!
+    
+    @IBOutlet weak var algebraICalcDesc: UILabel!
+    
+    func updateCellUI(model: CoreModel) {
         topicTitle.text = model.topicTitle
         descLabel.text = model.description
     }
