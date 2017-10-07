@@ -23,10 +23,9 @@ func peformSlopeCalculation(x1: String, y1: String, x2: String, y2: String, proc
 }
 
 func createFunctionFromResults(x: String, y: String, slope: String, processLabel: inout String) -> String {
-    let distribute = Double(slope)! * Double(x)!
-    let xOverY = distribute/Double(y)!
-    processLabel = "y - \(y) = \(slope)(x - \(x))"
-    let resultString = "y = \(slope)x + \(xOverY)"
-    return resultString
-    
+        let distribute = Double(slope)! * Double(x)!
+        let xOverY = distribute/Double(y)!
+        processLabel = "y - \(y) = \(slope)(x - \(x))"
+        let resultString = "y = \(slope)x + \(xOverY)"
+        return resultString
 }

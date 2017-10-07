@@ -77,10 +77,18 @@ class AlgebraIVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if item.topicTitle.contains("Slope") {
             fieldFour.isHidden = false
             result.text = peformSlopeCalculation(x1: fieldFour.text!, y1:       fieldTwo.text!, x2: fieldThree.text!, y2: fieldOne.text!, processLabel: &process.text!)
+            fieldOne.placeholder = "X1"
+            fieldTwo.placeholder = "X2"
+            fieldThree.placeholder = "Y1"
+            fieldFour.placeholder = "Y2"
+
         }
         
         if item.topicTitle.contains("Intercept") {
             fieldFour.isHidden = true
+            fieldOne.placeholder = "X"
+            fieldTwo.placeholder = "Y"
+            fieldThree.placeholder = "Slope"
             result.text = createFunctionFromResults(x: fieldOne.text!, y: fieldTwo.text!, slope: fieldThree.text!, processLabel: &process.text!)
         }
         
