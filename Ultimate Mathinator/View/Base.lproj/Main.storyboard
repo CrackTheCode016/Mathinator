@@ -185,16 +185,23 @@
                                                                     <rect key="frame" x="8" y="8" width="311" height="71"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Negatives" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBi-0a-PlX">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="311" height="47.666666666666664"/>
-                                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
-                                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="311" height="42"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description here. Keep it brief!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anq-3z-SCT">
-                                                                            <rect key="frame" x="0.0" y="47.666666666666657" width="311" height="23.333333333333343"/>
-                                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description here. Keep it brief!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anq-3z-SCT" customClass="LabelCard" customModule="Ultimate_Mathinator" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="42" width="311" height="29"/>
+                                                                            <color key="backgroundColor" red="0.23529411759999999" green="0.7843137255" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <nil key="highlightedColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="8"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                     </subviews>
                                                                     <constraints>
@@ -203,7 +210,7 @@
                                                                     </constraints>
                                                                 </stackView>
                                                             </subviews>
-                                                            <color key="backgroundColor" red="0.23529411759999999" green="0.7843137255" blue="0.45098039220000002" alpha="0.60632491435616442" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="icO-xa-hCw" firstAttribute="leading" secondItem="c1R-j1-Nzh" secondAttribute="leading" constant="8" id="Nyh-YB-lBQ"/>
                                                                 <constraint firstAttribute="bottom" secondItem="icO-xa-hCw" secondAttribute="bottom" constant="8" id="VIc-8n-tDW"/>
@@ -282,11 +289,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6g-Iq-gEu" customClass="CardView" customModule="Ultimate_Mathinator" customModuleProvider="target">
                                         <rect key="frame" x="8" y="257" width="343" height="409"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="EpB-hL-7P1">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="EpB-hL-7P1">
                                                 <rect key="frame" x="55" y="20" width="233.66666666666669" height="36"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wS2-ww-wJv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="36"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wS2-ww-wJv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="104.33333333333334" height="36"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zMJ-Op-uvu" customClass="TextViewModified" customModule="Ultimate_Mathinator" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
@@ -307,14 +314,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtV-bd-SUW">
-                                                                <rect key="frame" x="48" y="0.0" width="15" height="36"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="45"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqm-71-N9S" customClass="TextViewModified" customModule="Ultimate_Mathinator" customModuleProvider="target">
-                                                                <rect key="frame" x="75" y="0.0" width="36" height="36"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqm-71-N9S" customClass="TextViewModified" customModule="Ultimate_Mathinator" customModuleProvider="target">
+                                                                <rect key="frame" x="68.333333333333343" y="0.0" width="36" height="36"/>
                                                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="36" id="3yN-Qa-yij"/>
@@ -334,10 +335,10 @@
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="z8Q-sZ-fev">
-                                                        <rect key="frame" x="136" y="0.0" width="97.666666666666686" height="36"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="z8Q-sZ-fev">
+                                                        <rect key="frame" x="129.33333333333331" y="0.0" width="104.33333333333334" height="36"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-IB-ScZ" customClass="TextViewModified" customModule="Ultimate_Mathinator" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-IB-ScZ" customClass="TextViewModified" customModule="Ultimate_Mathinator" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -356,14 +357,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWM-Cu-6Pz">
-                                                                <rect key="frame" x="48" y="0.0" width="1.6666666666666856" height="36"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="45"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lbC-jS-iAr" customClass="TextViewModified" customModule="Ultimate_Mathinator" customModuleProvider="target">
-                                                                <rect key="frame" x="61.666666666666686" y="0.0" width="36" height="36"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lbC-jS-iAr" customClass="TextViewModified" customModule="Ultimate_Mathinator" customModuleProvider="target">
+                                                                <rect key="frame" x="68.333333333333343" y="0.0" width="36" height="36"/>
                                                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="36" id="maF-Pw-c4e"/>
@@ -428,7 +423,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.23529411764705882" green="0.78431372549019607" blue="0.45098039215686275" alpha="0.41914597602739728" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.23529411759999999" green="0.7843137255" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="5IB-pD-pUZ" firstAttribute="leading" secondItem="q6g-Iq-gEu" secondAttribute="leading" constant="8" id="1pM-mD-rL2"/>
                                             <constraint firstItem="Bz0-Eo-c61" firstAttribute="leading" secondItem="q6g-Iq-gEu" secondAttribute="leading" constant="8" id="4eK-8B-S1y"/>
@@ -534,20 +529,25 @@
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Negatives" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-R5-Khs">
                                                                             <rect key="frame" x="0.0" y="0.0" width="311" height="55.666666666666664"/>
-                                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
-                                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description here. Keep it brief!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHM-DX-7AQ">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description here. Keep it brief!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHM-DX-7AQ" customClass="LabelCard" customModule="Ultimate_Mathinator" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="55.666666666666657" width="311" height="23.333333333333343"/>
+                                                                            <color key="backgroundColor" red="0.32549019610000002" green="0.56470588239999997" blue="0.7843137255" alpha="0.67420269690000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <nil key="highlightedColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="8"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
-                                                            <color key="backgroundColor" red="0.32549019607843138" green="0.56470588235294117" blue="0.78431372549019607" alpha="0.67420269691780821" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstItem="Wal-JB-CaP" firstAttribute="leading" secondItem="1eh-ho-81C" secondAttribute="leading" constant="8" id="6Ak-PI-4oP"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Wal-JB-CaP" secondAttribute="bottom" constant="8" id="niA-Te-dzh"/>
@@ -717,6 +717,8 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="3cL-rr-Rne" firstAttribute="leading" secondItem="eej-Q7-6cx" secondAttribute="leading" constant="8" id="640-ae-IBw"/>
+                                            <constraint firstAttribute="trailing" secondItem="JA8-34-vLb" secondAttribute="trailing" constant="8" id="KV1-Ek-zm2"/>
+                                            <constraint firstItem="JA8-34-vLb" firstAttribute="leading" secondItem="eej-Q7-6cx" secondAttribute="leading" constant="8" id="nHy-zc-Y0f"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>

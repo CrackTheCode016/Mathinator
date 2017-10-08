@@ -43,6 +43,7 @@ class AlgebraIVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         items.append(CoreModel(topicTitle: "Distance Formula", description: "√(x2 - x1)^2 + (y2 - y1)^2"
             ))
         items.append(CoreModel(topicTitle: "Slope Intercept Equation", description: "y = mx + b"))
+        items.append(CoreModel(topicTitle: "Pythagoras Thereom", description: "a^2 + b^2 = c^2"))
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -76,10 +77,12 @@ class AlgebraIVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         if item.topicTitle.contains("Slope") {
             fieldFour.isHidden = false
-            result.text = peformSlopeCalculation(x1: fieldFour.text!, y1:       fieldTwo.text!, x2: fieldThree.text!, y2: fieldOne.text!, processLabel: &process.text!)
+            fieldOne.isHidden = false
+            result.text = peformSlopeCalculation(x1: fieldOne.text!, y1:       fieldTwo.text!, x2: fieldThree.text!, y2: fieldFour.text!, processLabel: &process.text!)
+            
             fieldOne.placeholder = "X1"
-            fieldTwo.placeholder = "X2"
-            fieldThree.placeholder = "Y1"
+            fieldTwo.placeholder = "Y1"
+            fieldThree.placeholder = "X2"
             fieldFour.placeholder = "Y2"
 
         }
@@ -88,8 +91,28 @@ class AlgebraIVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             fieldFour.isHidden = true
             fieldOne.placeholder = "X"
             fieldTwo.placeholder = "Y"
-            fieldThree.placeholder = "Slope"
+            fieldThree.placeholder = "m"
             result.text = createFunctionFromResults(x: fieldOne.text!, y: fieldTwo.text!, slope: fieldThree.text!, processLabel: &process.text!)
+        }
+        
+        if item.topicTitle.contains("Distance") {
+            fieldFour.isHidden = false
+            fieldOne.isHidden = false
+            fieldOne.placeholder = "X1"
+            fieldTwo.placeholder = "Y1"
+            fieldThree.placeholder = "X2"
+            fieldFour.placeholder = "Y2"
+            result.text = calculateDistanceBetweenPoints(x1: fieldOne.text!, y1: fieldTwo.text!, x2: fieldThree.text!, y2: fieldFour.text!, processLabel: &process.text!)
+
+        }
+        
+        if item.topicTitle.contains("Pythagoras") {
+            fieldOne.isHidden = true
+            fieldFour.isHidden = true
+            fieldTwo.placeholder = "A"
+            fieldThree.placeholder = "B"
+            result.text = pythagoreanThereom(a: fieldTwo.text!, b: fieldThree.text!, processLabel: &process.text!)
+            
         }
         
         
